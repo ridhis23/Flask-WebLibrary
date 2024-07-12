@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}Find Books{% endblock %} {% block content
+    %}
+<html>
+    <head>
+        <br>
+        <h1 align ="center">Find Books</h1>
+    </head>
+    <body>
+        <br>
+        <p align="center">Search for books within your community</p>
+        <br>
+        <form method="POST">
+            <div class="form-group">
+                <label for="Books">Book Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="BookName"
+                  name="BookName"
+                  placeholder="Enter the name of the book you want to find"
+                />
+            </div>
+        </form>
+    </body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block title %}Find Books{% endblock %} {% block content
+    %}
+<html>
+    <head>
+    </head>
+    <body>
+        <br>
+        <p align="center">Search for books within your community</p>
+        <br>
+        <form method="POST">
+            <div class="form-group">
+                <label for="Books">Book Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="BookName"
+                  name="BookName"
+                  placeholder="Enter the name of the book you want to find"
+                />
+        <br>
+        <br>
+        {% if mobiles != [] %}
+            <p align="center">Search Results for "{{searchCriteria}}"</p>
+            <p align="center"><b>Call the owner to check book availability</b></p>
+        {% else %}
+        <p align="center">No Search Results for "{{searchCriteria}}"</p>
+        <p align="center"><b>This Book is not available</b></p>   
+        <br>
+        {% endif %}
+        {% if mobiles != [] %}
+            {% for i in range (0,l):%} 
+            <p>Book Name : {{ book[i]}}</p>
+            <p>Owner : {{ owner[i]}}</p>
+            <p>Mobile Number: {{ mobiles[i] }}</p>
+            <hr>
+            <br>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>
+
+{% endblock %}

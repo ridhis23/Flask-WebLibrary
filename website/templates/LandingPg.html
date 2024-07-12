@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% block title %}Book Meet {% endblock %} {% block
+    content %}
+    <html>
+        <head>
+            <style>
+                .card{
+                    background-color: #c6d2dc;
+                    border-radius: 10px;
+                    border-color: #665A48;
+                    border-width: 3px;
+                    padding: 15px;
+                }
+
+                .center{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                body {
+                    background-color: #EDE4E0;
+                }
+
+            </style>
+        </head>
+    
+        <body bgcolor:#EDE4E0>
+            <br>
+            <img src="static/library1.jpeg" width="100%" class="center">
+            <br>
+            <div class = "card">
+                <p><strong>What is Meet A Book ?</strong></p>
+                <p>
+                    Meet A book is a platform to connect in your community and meet the book you are looking for. We all have our collection of books. At the same time, we are constantly looking for more either the next sequence or similar books.
+                    Our options are limited to either buying a new book, buying a second hand book or borrowing the book at the library. With "Meet A Book", now you can exchange 
+                    books with your friends, acquaintances or community members.
+                </p>
+            </div>
+            <br>
+            <div class="card">
+                <p><strong>How to use Meet A Book ?</strong></p>
+                <p>
+                    Step 1 : Sign Up - Provide your personal details like name, community name, phone number, email ID, and create your password <br>
+                    Step 2 : Once you have logged in, "My Books" will appear. On this page, you can add the books which you are willing to share.<br>
+                    Step 3 : Navigate to the "Find Books" page on the address bar to search for books within your community.<br>
+                    Step 4 : When you find the book you like, you can reach out to the owner of the book using the mobile number displayed.<br>
+                            Exchange of the books is at the free will of the owner. Return of the book is agreed at mutual consent.
+                </p>
+            </div>
+        </body>
+    </html>
+
+{% endblock %}
+
